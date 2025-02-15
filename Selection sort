@@ -5,13 +5,9 @@ void swap(int* a,int* b)
 	*a = *b;
 	*b = temp;
 }
-int findminindex(int i,int n)
-{
-	if(i <= n-1) return i;
-}
 void selectionsort(int arr[],int n,int i)
 {
-	int minindex = findminindex(i,n);
+	int minindex = i;
 	for(int j = minindex+1; j < n; j++)
 	{
 		if(arr[minindex] > arr[j])
