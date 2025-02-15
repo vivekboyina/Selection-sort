@@ -7,8 +7,7 @@ void swap(int* a,int* b)
 }
 int findminindex(int i,int n)
 {
-	if(i > n-1) return ;
-	return i;
+	if(i <= n-1) return i;
 }
 void selectionsort(int arr[],int n,int i)
 {
